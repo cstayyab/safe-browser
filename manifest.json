@@ -1,0 +1,24 @@
+{
+  "name": "Safe Browser",
+  "version": "1.0",
+  "description": "Automatically blocks all the unwanted pages and sensitive content!",
+  "permissions":["webRequest","webRequestBlocking","activeTab","declarativeContent","storage","tabs",
+    "notifications",
+    "http://*/",
+    "https://*/"],
+  "background": {
+    "scripts":["jquery.js","background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup":"popup.html",
+    "default_title":"Safe Browser"
+  },
+  "content_scripts": [{
+    "js": ["jquery.js","content.js"],
+    "matches": ["https://*/*", "http://*/*", "ftp://*/*"],
+    "run_at": "document_start",
+    "all_frames": false
+  }],
+  "manifest_version": 2
+}

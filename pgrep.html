@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/page-metadata-parser.bundle.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <script src="js/pgrep.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Safe Browser</h1>
+        <p>Browse the Internet - The way <strong>you</strong> want!!</p>
+    </div>
+    <div class="container">
+        <h2 class="text-center">Page Report</h2>
+        <table class="table table-bordered">
+            <tr>
+                <th>Page URL</th>
+                <td id="valpgurl"></td>
+            </tr>
+            <tr>
+                <th>Web of Trust Rating</th>
+                <td id="valpgwot"></td>
+            </tr>
+            <tr>
+                <th>Blocked</th>
+                <td id="valpgblocked"></td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-12 text-center"><button class="btn btn-outline-dark" id="send-button">Send Report to Email</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

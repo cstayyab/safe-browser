@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <script src="js/tmpblocked.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <img class="img-fluid" src="img/notallowed.png" />
+        <h1>Surf Safely
+            <small class="text-muted">Your browsing habits are being protected by <strong>Safe Browser</strong></small></h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-left">
+                <strong>The URL you are trying to open is temporarily blocked. You may unblock it or go back and try something else.</strong>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="btn-group">
+                    <a class="btn btn-outline-dark" id="btnpagereport" target="_blank" title="View Current Page's Report">Page Report</a>
+                    <a class="btn btn-outline-dark" href="https://www.google.com">Google</a>
+                    <a class="btn btn-outline-dark" id="btntmpunblock">Unblock it!</a>
+                    <button class="btn btn-outline-dark" id="btnaddthis" title="Add this page to a white or blacklist">Add to List</button>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+
+</html>

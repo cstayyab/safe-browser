@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <style>
+        body, row {
+          width:400px;
+          margin:5px;
+        }
+        * {
+          box-sizing: border-box;
+        }
+      </style>
+      <script src="js/default.js"></script>
+    </head>
+    <body>
+      <div class="jumbotron text-center">
+        <h1>Safe Browser</h1>
+        <p>Browse the Internet - The way <strong>you</strong> want!!</p> 
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <h2 class="text-center" style="border-bottom: solid 5px black">Status</h2>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-12"><h3>All OK!!</h3></div>
+        </div>
+        <div class="row">
+          <div id="status-details" class="col-12">Safe browser is working according to your selected browsing scheme.</div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3>Current Settings</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 mr-1"><strong>Scheme:</strong></div>
+          <div id="current-scheme" class="col-9">Teenager</div>
+        </div>
+        <div class="row">
+          <div class="col-2 mr-1"><strong>Blacklist:</strong></div>
+          <div class="col-9">None</div>
+        </div>
+        <div class="row">
+          <div class="col-2 mr-1"><strong>Whitelist:</strong></div>
+          <div class="col-9">None</div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="btn-group btn-group-sm">
+              <a class="btn btn-outline-dark" id="btnpagereport" target="_blank" title="View Current Page's Report">Page Report</a>
+              <button class="btn btn-outline-dark" id="tmpblockthis" title="Block current page for current session">Block</button>
+              <button class="btn btn-outline-dark" id="btnaddthis" title="Add this page to a white or blacklist">Add to List</button>
+              <button class="btn btn-outline-dark" disabled>Manage</button>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </body>
+  </html>
